@@ -23,6 +23,7 @@ public class SpringMemberControllerV3 {
     private MemberRepository memberRepository = MemberRepository.getInstance();
 
     //@RequestMapping(value = "/new-form", method = RequestMethod.GET) 이렇게 쓰는 대신 아래에 '@GetMapping'을 슨다
+    //'@GetMapping'을 'ctrl + 마우스 커서'로 열어보면, 그 안에 '@RequestMapping...'이 다 들어있다!
     @GetMapping("/new-form")
     public String newForm() {
 
