@@ -48,7 +48,7 @@ public class SpringMemberControllerV3 {
 
     
     @GetMapping
-    public Sodel model)tring members(Model model) {
+    public String members(Model model) {
 
         List<Member> members = memberRepository.findAll();
         model.addAttribute("members", members);
