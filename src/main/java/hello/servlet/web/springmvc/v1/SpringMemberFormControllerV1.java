@@ -10,7 +10,14 @@ import org.springframework.web.servlet.ModelAndView;
             //- ctrl 누르고, '@Controller'위에 커서 두고 들어가보면, 그 내부에 '@Component', '@Target' 등등을
             //  그 내부 기능으로 포함하고 있음
             //- 또한, '클래스 레벨'에서 '@Controller' 대신, '@Component 하나만', 또는 '@RequestMapping 하나만' 있어도
-            //  동일하게 작동한다!
+            //  동일하게 작동한다! 이렇게 아래 두 개만 있어도 되고
+//@Component
+//@RequestMapping
+
+            //- 이렇게 아래 하나만 있어도 정상적으로 작동한다
+//@RequestMapping
+
+            //- 근데, 그냥 깔끔하게 '@Controller' 하나만 붙이는 게 일반적임
 public class SpringMemberFormControllerV1 {
 
 
